@@ -58,7 +58,7 @@
                     <h2>Lista dei film :</h2>
                 </div>
                 <div class="col-3">
-                    <div class="card shadow">
+                    <div class="card shadow h-100">
                         <div class="card-body">
                             <h5 class="card-title">
                                 <?php echo$film_1->title; ?>
@@ -82,7 +82,7 @@
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="card shadow">
+                    <div class="card shadow h-100">
                         <div class="card-body">
                             <h5 class="card-title">
                                 <?php echo$film_2->title; ?>
@@ -106,7 +106,7 @@
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="card shadow">
+                    <div class="card shadow h-100">
                         <div class="card-body">
                             <h5 class="card-title">
                                 <?php echo$film_3->title; ?>
