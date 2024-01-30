@@ -14,7 +14,7 @@
     };
 
     //dichiariamo un oggetto della classe
-    $genere_fim1 = [
+    $genere_film1 = [
         "giallo",
         "thriller",
         "western"
@@ -85,22 +85,46 @@
                     <div class="card shadow">
                         <div class="card-body">
                             <h5 class="card-title">
-                                <?php echo$film_1->title; ?>
+                                <?php echo$film_2->title; ?>
                             </h5>
                             <h6 class="card-subtitle mb-2 text-body-secondary">
-                                Durata: <?php echo $film_1->time." m";?>
+                                Durata: <?php echo $film_2->time." m";?>
                             </h6>
                             <p class="card-text">
                                 <h6>Genere:</h6>
                                 <?php 
-                                    for ($i=0; $i < count($film_1->genre); $i++) { 
-                                        echo " -".$film_1->genre[$i];
+                                    for ($i=0; $i < count($film_2->genre); $i++) { 
+                                        echo " -".$film_2->genre[$i];
                                     }
                                 ?>
                             </p>
                             <p class="card-subtitle text-body-secondary">
                                 <h6>Anno di uscita :</h6>
-                                <?php  echo $film_1->year; ?>
+                                <?php  echo $film_2->year; ?>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <?php echo$film_3->title; ?>
+                            </h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">
+                                Durata: <?php echo $film_3->time." m";?>
+                            </h6>
+                            <p class="card-text">
+                                <h6>Genere:</h6>
+                                <?php 
+                                    for ($i=0; $i < count($film_3->genre); $i++) { 
+                                        echo " -".$film_3->genre[$i];
+                                    }
+                                ?>
+                            </p>
+                            <p class="card-subtitle text-body-secondary">
+                                <h6>Anno di uscita :</h6>
+                                <?php  echo $film_3->year; ?>
                             </p>
                         </div>
                     </div>
