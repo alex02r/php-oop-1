@@ -4,6 +4,13 @@
         public $time;
         public $genre;
         public $year;
+
+        function __construct($_title, $_time, $_genre, $_year){
+            $this->title = $_title;
+            $this->title = $_time;
+            $this->title = $_genre;
+            $this->title = $_year;
+        }
     };
 
 ?>
