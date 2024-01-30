@@ -14,13 +14,29 @@
     };
 
     //dichiariamo un oggetto della classe
-    $genere = [
+    $genere_fim1 = [
         "giallo",
         "thriller",
         "western"
     ];
-    $film_1 = new Movie("The Killer of the flower moon", 206, $genere, 2023 );
-    var_dump($film_1);
+    $film_1 = new Movie("The Killer of the flower moon", 206, $genere_film1, 2023 );
+
+    $genere_film2=[
+        "drammatico",
+        "azione",
+        "thriller",
+        "gangster"
+    ];
+
+    $film_2 = new Movie("Scarface", 170, $genere_film2, 1983 );
+
+    $genere_film3 = [
+        "azione",
+        "fantascienza",
+        "thriller",
+        "avventura"
+    ];
+    $film_3 = new Movie("Inception", 148, $genere_film3, 2010 );
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,6 +56,30 @@
             <div class="row justify-content-center">
                 <div class="col-12">
                     <h2>Lista dei film :</h2>
+                </div>
+                <div class="col-3">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <?php echo$film_1->title; ?>
+                            </h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">
+                                Durata: <?php echo $film_1->time." m";?>
+                            </h6>
+                            <p class="card-text">
+                                <h6>Genere:</h6>
+                                <?php 
+                                    for ($i=0; $i < count($film_1->genre); $i++) { 
+                                        echo " -".$film_1->genre[$i];
+                                    }
+                                ?>
+                            </p>
+                            <p class="card-subtitle text-body-secondary">
+                                <h6>Anno di uscita :</h6>
+                                <?php  echo $film_1->year; ?>
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-3">
                     <div class="card shadow">
