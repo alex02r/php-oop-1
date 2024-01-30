@@ -1,3 +1,12 @@
+<?php  
+    class Movie{
+        public $title;
+        public $time;
+        public $genre;
+        public $year;
+    };
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
