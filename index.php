@@ -13,6 +13,14 @@
         }
     };
 
+    //dichiariamo un oggetto della classe
+    $genere = [
+        "giallo",
+        "thriller",
+        "western"
+    ];
+    $film_1 = new Movie("The Killer of the flower moon", 206, $genere, 2023 );
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
