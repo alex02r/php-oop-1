@@ -32,6 +32,17 @@
     <title>OOP</title>
 </head>
 <body>
-    
+    <header class="p-3 bg-dark text-white">
+        <h1>Films</h1>
+    </header>
+    <main>
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h2>Lista dei film :</h2>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
