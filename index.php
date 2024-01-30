@@ -7,9 +7,9 @@
 
         function __construct($_title, $_time, $_genre, $_year){
             $this->title = $_title;
-            $this->title = $_time;
-            $this->title = $_genre;
-            $this->title = $_year;
+            $this->time = $_time;
+            $this->genre = $_genre;
+            $this->year = $_year;
         }
     };
 
@@ -20,7 +20,7 @@
         "western"
     ];
     $film_1 = new Movie("The Killer of the flower moon", 206, $genere, 2023 );
-    
+    var_dump($film_1);
 ?>
 <!DOCTYPE html>
 <html lang="en">
